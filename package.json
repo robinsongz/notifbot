@@ -1,0 +1,34 @@
+{
+  "name": "slime-bot",
+  "version": "1.0.0",
+  "description": "discord bot for maplestory m",
+  "engines": {
+    "node": "8.x"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "forever start app.js",
+    "stop": "forever stop app.js",
+    "restart": "npm stop && npm start",
+    "nodemon": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite-pool": "^0.1.2",
+    "cron": "^1.7.0",
+    "cron-job-manager": "^2.1.1",
+    "discord.js": "^11.4.2",
+    "discord.js-commando": "^0.10.0",
+    "dotenv": "^6.2.0",
+    "enmap": "^4.3.3",
+    "forever": "^0.15.3",
+    "moment": "^2.24.0",
+    "node-cron": "^2.0.3",
+    "sqlite": "^3.0.0",
+    "time": "^0.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
